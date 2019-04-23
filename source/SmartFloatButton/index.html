@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit">
+		<title>浮动按钮Sample</title>
+
+		<!--BootStrap-->
+		<link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
+		<!--图标库-->
+		<link rel="stylesheet" href="css/font-awesome.min.css" media="screen">
+		<link rel="stylesheet" href="css/position.css" media="screen" />
+		<link rel="stylesheet" href="css/float.button.css" media="screen">
+
+	</head>
+	<body>
+
+		<!--不能删内容开始-->
+		<div class="mlztx">
+			<span>0</span><i class="fa fa-comments"></i>
+		</div>
+		<div class="mlz" style="overflow: auto; max-height: 500px;">
+			<div style="background-color: #2b93e6">
+				<div class="f">
+					<h4><i class="fa fa-comment"></i>联系我</h4>
+				</div>
+				<div class="df">
+				</div>
+				<div class="in2" style="border-top: 1px solid #e8e8e8;padding-top:20px;margin-top:20px;background-color:#f7f7f7">
+					<textarea id="textarea1" readonly="readonly" style="height:200px; width:100%;min-height: 260px" placeholder="您有什么想法要说的吗？帮助他人、分享技术会获得奖励！">
+			我的博客：https://xingyun.blog.csdn.net/
+			Email：fairy_xingyun@hotmail.com
+                   </textarea>
+				</div>
+			</div>
+		</div>
+		<!--不能删内容结束-->
+
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+				var k = 0;
+				$(".mlztx,.mplgb").click(function() {
+					if (k == 0) {
+						$(".mlz").fadeIn();
+						k = 1;
+					} else {
+						k = 0;
+						$(".mlz").fadeOut();
+					}
+				});
+			</script>
+		</body>
+</html>
